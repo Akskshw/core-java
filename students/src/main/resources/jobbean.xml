@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+
+<bean id="b" class="com.xworkz.dp.Job">
+<property name="design" value="SE"></property>
+</bean>
+<bean id="dr" class="com.xworkz.dp.Mme" autowire="byName">
+<property name="name" value="drushya"></property>
+ <property name="listofId">
+<list> 
+ <value>156616</value>
+ <value>545554</value>
+</list>
+</property>
+<!--<property name="b" ref="job"></property> -->
+<!-- reference attribute is to define class type reference.so we need to give reference bean id to ref attribute -->
+</bean>
+
+</beans>
